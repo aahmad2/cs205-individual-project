@@ -1,8 +1,8 @@
-import java.util.Optional;
+import java.util.ArrayList;
 
 public class Artist {
     private String name;
-    private Album[] discography;
+    private ArrayList<Album> discography;
 
     public Artist(String name) {
         this.name = name;
@@ -16,15 +16,15 @@ public class Artist {
         this.name = name;
     }
 
-    public Album[] getDiscography() {
+    public ArrayList<Album> getDiscography() {
         return discography;
     }
 
-    public void setDiscography(Album[] discography) {
+    public void setDiscography(ArrayList<Album> discography) {
         this.discography = discography;
     }
 
     public void addAlbum(Album album){
-        discography[discography.length]=album;
+        discography.add(album);
     }
 }

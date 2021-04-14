@@ -1,12 +1,21 @@
 import java.sql.Time;
 import java.util.Date;
 
-public class Song {
+public class Song{
     private String songName;
     private Date releaseDate;
     private Time runTime;
     private String genre;
+    private Album album;
+    private Artist artist;
 
+    public Artist getArtist() {
+        return artist;
+    }
+
+    public void setArtist(Artist artist) {
+        this.artist = artist;
+    }
 
     public Song(String songName) {
         this.songName = songName;
@@ -42,5 +51,13 @@ public class Song {
 
     public void setRunTime(Time runTime) {
         this.runTime = runTime;
+    }
+
+    public Album getAlbum() {
+        return album;
+    }
+
+    public void setAlbum(Album album) {
+        this.album = album;
     }
 }
