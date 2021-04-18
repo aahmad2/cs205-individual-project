@@ -5,7 +5,7 @@ import java.util.Date;
 public class Album{
     private String albumName;
     private LocalDate releaseDate;
-    private ArrayList<Song> catalogue;
+    private ArrayList<Song> catalogue = new ArrayList<>();
 
     public Album(String albumName) {
         this.albumName = albumName;
@@ -37,7 +37,7 @@ public class Album{
         }
     }
     public void addSong(Song song){
-        catalogue.add(song);
+        this.catalogue.add(song);
         song.setAlbum(this);
     }
 }
