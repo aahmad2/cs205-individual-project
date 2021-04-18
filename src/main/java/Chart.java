@@ -18,6 +18,11 @@ public class Chart {
         this.ranks = ranks;
     }
 
+    public Chart(String name, Object[] ranks) {
+        this.name = name;
+        this.ranks = ranks;
+    }
+
     public Chart(String name) {
         this.name = name;
     }
