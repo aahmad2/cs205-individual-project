@@ -1,9 +1,10 @@
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Date;
 
 public class Album{
     private String albumName;
-    private Date releaseDate;
+    private LocalDate releaseDate;
     private ArrayList<Song> catalogue;
 
     public Album(String albumName) {
@@ -18,11 +19,11 @@ public class Album{
         this.albumName = albumName;
     }
 
-    public Date getReleaseDate() {
+    public LocalDate getReleaseDate() {
         return releaseDate;
     }
 
-    public void setReleaseDate(Date releaseDate) {
+    public void setReleaseDate(LocalDate releaseDate) {
         this.releaseDate = releaseDate;
     }
 
@@ -30,7 +31,7 @@ public class Album{
         return catalogue;
     }
 
-    public void setCatalogue(Song[] catalogue) {
+    public void setCatalogue(ArrayList<Song> catalogue) {
         for (Song s:catalogue) {
             this.addSong(s);
         }
