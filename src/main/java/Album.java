@@ -40,4 +40,8 @@ public class Album{
         this.catalogue.add(song);
         song.setAlbum(this);
     }
+    public void failAddSong(Song song){
+        this.catalogue.set(0, song);
+        song.setAlbum(this);
+    }
 }

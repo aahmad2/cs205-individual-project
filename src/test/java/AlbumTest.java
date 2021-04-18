@@ -40,12 +40,6 @@ class AlbumTest {
         assertEquals(date,temp.getReleaseDate());
     }
 
-    @Test
-    void getCatalogue() {
-        Album temp = new Album("One X");
-
-
-    }
 
     @Test
     void addSong() {
@@ -53,7 +47,15 @@ class AlbumTest {
         temp.addSong(new Song("Never too late"));
         assertEquals("Never too late", temp.getCatalogue().get(0).getSongName());
     }
-
+/*
+    @Test
+    void failAddSong() {
+        Album temp = new Album("One X");
+        temp.failAddSong(new Song("Never too late"));
+        temp.failAddSong(new Song("Pain"));
+        assertEquals("Never too late", temp.getCatalogue().get(0).getSongName());
+    }
+*/
     @Test
     void setCatalogue() {
         Album temp = new Album("One X");
