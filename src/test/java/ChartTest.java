@@ -3,7 +3,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class ChartTest {
-
+        //simple tests for the getters and setters for the class to see if they are returning and editing things as expected
     @Test
     void getName() {
         Chart temp = new Chart("Billboards");
@@ -31,7 +31,6 @@ class ChartTest {
         String arr[] = {"hello", "Shape of you"};
         temp.setRanks(arr);
         assertEquals(arr, temp.getRanks());
-
     }
 
 

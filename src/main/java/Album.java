@@ -41,7 +41,7 @@ public class Album{
         song.setAlbum(this);
     }
     public void failAddSong(Song song){
-        this.catalogue.set(0, song);
+        this.catalogue.set(0, song);    //This rewrites the first index everytime instead of adding the song properly
         song.setAlbum(this);
     }
 }

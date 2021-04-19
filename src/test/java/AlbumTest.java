@@ -1,13 +1,11 @@
 import org.junit.jupiter.api.Test;
-
 import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Date;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class AlbumTest {
-
+class AlbumTest {       //I tested a few getters and setters as well as a few functions that interacted with arraylists
+                        //as they can be a little funky at time to work with
     @Test
     void getAlbumName() {
         Album temp = new Album("One X");
@@ -47,6 +45,7 @@ class AlbumTest {
         temp.addSong(new Song("Never too late"));
         assertEquals("Never too late", temp.getCatalogue().get(0).getSongName());
     }
+    //Uncomment the following code to call the method that will fail the tests
 /*
     @Test
     void failAddSong() {
